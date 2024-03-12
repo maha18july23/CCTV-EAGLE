@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #65B530;
+    --primary: red;
     --secondary: #9B9B9B;
     --light: #F5F5F5;
-    --dark: #161616;
+    --dark: #010000;
 }
 
 .fw-medium {
@@ -56,7 +56,11 @@
     width: 38px;
     height: 38px;
 }
-
+.btn-square.services{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
 .btn-sm-square {
     width: 32px;
     height: 32px;
@@ -90,7 +94,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
     outline: none;
 }
@@ -154,7 +158,7 @@
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(22, 22, 22, .7);
+    /* background: rgba(22, 22, 22, .7); */
 }
 
 @media (max-width: 768px) {
@@ -183,20 +187,16 @@
 }
 
 .header-carousel .owl-nav {
-    position: absolute;
-    width: 200px;
-    height: 45px;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
+   
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     width: 45px;
-    height: 45px;
+    
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,7 +207,20 @@
     font-size: 22px;
     transition: .5s;
 }
-
+.header-carousel .owl-nav .owl-next{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    right: 0;
+}
+.header-carousel .owl-nav .owl-prev{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    left: 0;
+}
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
@@ -254,7 +267,19 @@
 }
 
 .page-header {
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/bg-10.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-about {
     background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-project {
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/bg-5.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-contact {
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/bg-4.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -469,22 +494,22 @@
 
 .testimonial-carousel .owl-dots .owl-dot {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
     margin: 0 5px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .testimonial-carousel .owl-dots .owl-dot::after {
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: -20px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -563,4 +588,22 @@
     color: var(--primary);
     letter-spacing: 1px;
     box-shadow: none;
+}
+    .whatsapp {
+position: fixed;
+bottom: 100px;
+right: 13px;
+z-index: 999;
+}
+.whatsapp i {
+font-size: 40px;
+color:var(--primary);
+background-color: #0000;
+padding: 8px;
+border-radius: 50%;
+box-shadow: 2px 3px 4px black;
+}
+.whatsapp:hover i {
+color:var(--primary);
+background-color:var(--dark);
 }
