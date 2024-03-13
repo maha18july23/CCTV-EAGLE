@@ -84,7 +84,7 @@ h6,
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #161616
+    color:#dc3545
 }
 
 h1,
@@ -540,6 +540,7 @@ progress {
     font-size: calc(1.425rem + 2.1vw);
     font-weight: 900;
     line-height: 1.2
+    
 }
 
 @media (min-width: 1200px) {
@@ -647,6 +648,7 @@ progress {
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto
+    ba
 }
 
 @media (min-width: 576px) {
@@ -1427,6 +1429,7 @@ progress {
     .col-lg-6 {
         flex: 0 0 auto;
         width: 50%
+    
     }
 
     .col-lg-7 {
@@ -7816,6 +7819,7 @@ s
 
 .mb-4 {
     margin-bottom: 1.5rem !important
+    
 }
 
 .mb-5 {

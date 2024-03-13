@@ -68,7 +68,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services:hover{
-    box-shadow: 8px 8px 10px var(--teritary), -8px -8px 10px var(--teritary);
+    box-shadow: 12px 12px 16px var(--teritary), -12px -12px 16px var(--teritary);
     transform: translate(-10px,-20px);
   
 }
@@ -80,7 +80,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services-a:hover{
-    box-shadow: 6px 6px 10px var(--dark), -6px -6px 10px var(--dark);
+    box-shadow: 12px 12px 16px var(--secondary), -12px -12px 16px var(--secondary);
     transform: translate(-10px,-20px);
   
 }
@@ -92,7 +92,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services-b:hover{
-    box-shadow: 6px 6px 10px var(--laptop), -6px -6px 10px var(--laptop);
+    box-shadow: 12px 12px 16px var(--laptop), -12px -12px 16px var(--laptop);
     transform: translate(-10px,-20px);
   
 }
@@ -104,7 +104,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services-c:hover{
-    box-shadow: 6px 6px 10px var(--blurry), -6px -6px 10px var(--blurry);
+    box-shadow: 12px 12px 16px var(--blurry), -12px -12px 16px var(--blurry);
     transform: translate(-10px,-20px);
   
 }
@@ -116,7 +116,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services-d:hover{
-    box-shadow: 6px 6px 10px var(--greenary), -6px -6px 10px var(--greenary);
+    box-shadow: 12px 12px 16px var(--greenary), -12px -12px 16px var(--greenary);
     transform: translate(-10px,-20px);
   
 }
@@ -128,7 +128,7 @@
     transition: 0.5s all ease-in-out;
 }
 .btn-square-services-e:hover{
-    box-shadow: 6px 6px 10px var(--primary), -6px -6px 10px var(--primary);
+    box-shadow: 12px 12px 16px var(--primary), -12px -12px 16px var(--primary);
     transform: translate(-10px,-20px);
   
 }
