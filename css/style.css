@@ -4,6 +4,10 @@
     --secondary: #9B9B9B;
     --light: #F5F5F5;
     --dark: #010000;
+    --teritary:yellow;
+    --greenary:green;
+    --blurry:#0dcaf0;
+    --laptop:blue;
 }
 
 .fw-medium {
@@ -56,10 +60,77 @@
     width: 38px;
     height: 38px;
 }
-.btn-square.services{
+.btn-square-services{
     width: 200px;
     height: 200px;
     text-align: center;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services:hover{
+    box-shadow: 8px 8px 10px var(--teritary), -8px -8px 10px var(--teritary);
+    transform: translate(-10px,-20px);
+  
+}
+.btn-square-services-a{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services-a:hover{
+    box-shadow: 6px 6px 10px var(--dark), -6px -6px 10px var(--dark);
+    transform: translate(-10px,-20px);
+  
+}
+.btn-square-services-b{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services-b:hover{
+    box-shadow: 6px 6px 10px var(--laptop), -6px -6px 10px var(--laptop);
+    transform: translate(-10px,-20px);
+  
+}
+.btn-square-services-c{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services-c:hover{
+    box-shadow: 6px 6px 10px var(--blurry), -6px -6px 10px var(--blurry);
+    transform: translate(-10px,-20px);
+  
+}
+.btn-square-services-d{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services-d:hover{
+    box-shadow: 6px 6px 10px var(--greenary), -6px -6px 10px var(--greenary);
+    transform: translate(-10px,-20px);
+  
+}
+.btn-square-services-e{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+.btn-square-services-e:hover{
+    box-shadow: 6px 6px 10px var(--primary), -6px -6px 10px var(--primary);
+    transform: translate(-10px,-20px);
+  
 }
 .btn-sm-square {
     width: 32px;

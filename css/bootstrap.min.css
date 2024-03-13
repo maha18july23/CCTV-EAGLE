@@ -607,6 +607,10 @@ progress {
     max-width: 100%;
     height: auto
 }
+.img-fluid-set{
+    max-width: 170%;
+    height: auto
+}
 
 .img-thumbnail {
     padding: .25rem;
