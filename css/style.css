@@ -663,7 +663,7 @@
 }
 .whatsapp {
   position: fixed;
-  bottom: 100px;
+  bottom: 250px;
   right: 13px;
   z-index: 999;
 }
