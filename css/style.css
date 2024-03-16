@@ -664,7 +664,7 @@
 .whatsapp {
   position: fixed;
   bottom: 250px;
-  right: 13px;
+  right: 20px;
   z-index: 999;
 }
 .whatsapp i {
