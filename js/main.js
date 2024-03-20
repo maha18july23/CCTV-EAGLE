@@ -85,6 +85,22 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    const get =document.querySelector(".dropdown-btn2");
+    const openget=document.querySelector(".dropdown-menu2");
+
+get.addEventListener("click",()=>{
+    openget.classList.toggle("active")
+})
+document.addEventListener("click", (event) => {
+    // Check if the clicked element is not part of the dropdown menu or button
+    if (!openget.contains(event.target) && event.target !== get) {
+        // Close the dropdown menu if it's open
+        if (openget.classList.contains("active")) {
+            openget.classList.remove("active");
+        }
+    }
+});
     
 })(jQuery);
 

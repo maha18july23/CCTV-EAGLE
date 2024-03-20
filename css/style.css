@@ -60,8 +60,8 @@
   height: 38px;
 }
 .btn-square-services {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 20px;
   transition: 0.5s all ease-in-out;
@@ -71,8 +71,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-a {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -82,8 +82,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-b {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -93,8 +93,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-c {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -104,8 +104,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-d {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -115,8 +115,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-e {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -126,8 +126,8 @@
   transform: translate(-10px, -20px);
 }
 .btn-square-services-f {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   text-align: center;
   border-radius: 0px;
   transition: 0.5s all ease-in-out;
@@ -207,6 +207,7 @@
     border: none;
     margin-top: 0;
     top: 150%;
+    left: 50%;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -509,7 +510,7 @@
 
 /*** Team ***/
 .team-item {
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 0 45px rgba(0, 0, 0, 0.08); */
 }
 
 .team-item img {
@@ -678,4 +679,35 @@
 .whatsapp:hover i {
   color: #198754;
   background-color: var(--light);
+}
+button.dropdown-btn2{
+  position: relative;
+  background-color: red;
+  color: white;
+ padding: 8px 15px;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.dropdown-menu2{
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  display: none;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  box-shadow:inset 4px 4px 8px var(--primary),inset -4px -4px 8px var(--primary);
+}
+.dropdown-menu2.active{
+  display: block;
+  transition: 2s all ease-in-out;
+}
+@media(max-width:992px){
+.dropdown-menu2{
+ left: 0;
+ width: 100%;
+}
 }

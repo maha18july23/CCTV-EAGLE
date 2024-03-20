@@ -3874,7 +3874,7 @@ s
     color: #9B9B9B;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color:var(--light);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 6px
