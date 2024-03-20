@@ -753,36 +753,36 @@
                             security needs. Our experts will assess your requirements and provide a personalized quote,
                             ensuring peace of mind without breaking the bank. Request your free quote now and take the
                             first step towards enhancing your security.</p>
-                        <form>
+                        <form id="bookingForm">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
+                                    <input type="text" class="form-control border-0" id="name" placeholder="Your Name"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
+                                    <input type="email" class="form-control border-0" id="email" placeholder="Your Email"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
-                                        style="height: 55px;">
+                                    <input type="text" class="form-control border-0" id="number" placeholder="Your Mobile"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px; ">
+                                    <select class="form-select border-0" id="service" style="height: 55px; " required>
                                         <option selected>Select A Service</option>
-                                        <option value="1">CCTV Installation Services
+                                        <option value="CCTV Installation Services">CCTV Installation Services
                                         </option>
-                                        <option value="2"> Network Services</option>
-                                        <option value="3"> Printer Services</option>
-                                        <option value="3"> Laptops And Desktops Repair</option>
-                                        <option value="3"> Biometric And Door Access ControlL</option>
-                                        <option value="3"> Projector Services</option>
+                                        <option value="Network Services"> Network Services</option>
+                                        <option value="Printer Services"> Printer Services</option>
+                                        <option value="Laptops And Desktops Repair"> Laptops And Desktops Repair</option>
+                                        <option value="Biometric And Door Access Control"> Biometric And Door Access Control</option>
+                                        <option value="Projector Services"> Projector Services</option>
 
 
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <textarea class="form-control border-0" placeholder="Special Note" id="message"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Get A Contact</button>
@@ -1033,6 +1033,46 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        //book appointment
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+         
+
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+            var service = document.getElementById("service").value;
+            var contact = "+919666600583";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+                "service: " +
+                service +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
 </body>
 
 </html>
