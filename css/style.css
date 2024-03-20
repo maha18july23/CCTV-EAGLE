@@ -511,7 +511,10 @@
 /*** Team ***/
 .team-item {
   /* box-shadow: 0 0 45px rgba(0, 0, 0, 0.08); */
+  display: grid;
+  place-items: center;
 }
+
 
 .team-item img {
   transition: 0.5s;
