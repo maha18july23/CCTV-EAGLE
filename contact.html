@@ -179,29 +179,29 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4" style="color: #000000;">Contact us today to schedule a consultation with our expert team. We're here to bring your vision to life and create a stunning online presence tailored to your business.</p>
-                        <form>
+                        <form id="bookingForm">
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="Mobile No" placeholder="Mobile No">
+                                        <input type="text" class="form-control" id="number" placeholder="Mobile No" required>
                                         <label for="subject">Mobile No</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
@@ -341,6 +341,47 @@
     
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            //book appointment
+            document.getElementById("bookingForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+    
+                var fullName = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+             
+    
+                var number = document.getElementById("number").value;
+                var message = document.getElementById("message").value;
+                var subject = document.getElementById("subject").value;
+                var contact = "+919121764089";
+    
+                var encodedMessage = encodeURIComponent(
+                    "Name: " +
+                    fullName +
+                    "\n" +
+                    "Email: " +
+                    email +
+                    "\n" +
+                    "Number: " +
+                    number +
+                    "\n" +
+                   
+                    "subject: " +
+                    subject +
+                    "\n" +
+                    "Message: " +
+                    message
+                );
+    
+                // Mobile device, open WhatsApp
+                var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+                window.open(whatsappLink, "_blank");
+    
+                // Additional: You can reset the form and show a thank you message if needed
+                document.getElementById("thankYouMessage").style.display = "block";
+                document.getElementById("bookingForm").reset();
+            });
+        </script>
 </body>
 
 </html>
