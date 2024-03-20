@@ -507,7 +507,13 @@
     padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
   }
 }
-
+.features .feature{
+display: grid;
+place-items: center;
+}
+.features .feature img{
+padding-top: 20px;
+}
 /*** Team ***/
 .team-item {
   /* box-shadow: 0 0 45px rgba(0, 0, 0, 0.08); */
