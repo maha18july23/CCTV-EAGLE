@@ -683,3 +683,12 @@ button.dropdown-btn2{
  width: 100%;
 }
 }
+.container-fluid.serC{
+  color: #ffff;
+  background-color: #000000;
+  font-size: 17px;
+  
+}
+.container-fluid.serC p{
+margin: 0;
+}
